@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = BigosInstagramBox::VERSION
   s.authors     = ["Artur Kremens"]
   s.email       = ["kremenso@o2.pl"]
-  s.homepage    = "weban.com.pl"
+  s.homepage    = "http://www.weban.com.pl"
   s.summary     = "Instagram box for bigos cms system."
   s.description = "Instagram box module"
 
