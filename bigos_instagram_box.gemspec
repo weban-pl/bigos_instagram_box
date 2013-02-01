@@ -20,7 +20,4 @@ Gem::Specification.new do |s|
   s.add_dependency "instagram"
   s.add_dependency "yettings"
   s.add_dependency "bigos_settings"
-
-
-  s.add_development_dependency "sqlite3"
 end
