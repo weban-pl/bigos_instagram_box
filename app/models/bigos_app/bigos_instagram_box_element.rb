@@ -6,7 +6,7 @@ module BigosApp
     end
 
     def render
-      "bigos_instagram_box/item"
+      "bigos_instagram_box/module/item"
     end
 
     def admin_render
