@@ -9,8 +9,8 @@ module BigosInstagramBox
       end
 
       def create_settings
-        Setting["GS.instagram_client_id"] = "YOUR_APP_ACCESS_TOKEN" Setting.find_by_var("GS.instagram_client_id").blank?
-        Setting["GS.instagram_client_secret"] = "YOUR_APP_CLIENT_SECRET" Setting.find_by_var("GS.instagram_client_secret").blank?
+        Setting["GS.instagram_client_id"] = "YOUR_APP_ACCESS_TOKEN" if Setting.find_by_var("GS.instagram_client_id").blank?
+        Setting["GS.instagram_client_secret"] = "YOUR_APP_CLIENT_SECRET" if Setting.find_by_var("GS.instagram_client_secret").blank?
         Setting["GS.instagram_access_token"]= "YOUR_APP_ACCESS_TOKEN" if Setting.find_by_var("GS.instagram_access_token").blank?
         Setting["#{BigosInstagramBox.name}.hashtag"] = ""
         Setting["#{BigosInstagramBox.name}.user_id"] = ""
