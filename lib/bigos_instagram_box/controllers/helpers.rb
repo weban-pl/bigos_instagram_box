@@ -6,8 +6,8 @@ module BigosInstagramBox
       def bigos_instagram_box_widget(max_tag_id = nil)
 
         Instagram.configure do |config|
-          config.client_id = Setting["#{BigosInstagramBox.name}.client_id"]
-          config.client_secret = Setting["#{BigosInstagramBox.name}.client_secret"]
+          config.client_id = Setting["GS.instagram_client_id"]
+          config.client_secret = Setting["GS.instagram_client_secret"]
         end
 
         posts = []
@@ -25,7 +25,7 @@ module BigosInstagramBox
               id,
               :max_tag_id => max_tag_id,
               :count => count,
-              :access_token => Setting["#{BigosInstagramBox.name}.access_token"]
+              :access_token => Setting["GS.instagram_access_token"]
           )
           items.each do |photo_hash|
             posts << BigosInstagramBox::InstagramPhoto.new(photo_hash)
